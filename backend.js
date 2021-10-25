@@ -21,8 +21,10 @@ function playKey(e){
             normal();
             isKeySelected[keyVal] = false;
             startGame();
-            document.getElementById("coin").currentTime = 0;
-            document.getElementById("coin").play();
+            var coin = Math.floor(Math.random()*17);
+            document.getElementById("coin"+coin).currentTime = 0;
+            document.getElementById("coin"+coin).volume = 0.1;
+            document.getElementById("coin"+coin).play();
         }
         else{
             document.getElementById("Key"+keys[keyVal]).style.borderColor = '#f33';
