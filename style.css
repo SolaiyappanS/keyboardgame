@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    color: cyan;
+}
+
+.table{
+    display: block;
+    padding: 10px;
+    font-family: Impact;
+}
+
+.row{
+    display: block;
+}
+
+.column{
+    display: inline-block;
+    height: 60px;
+    width: 80px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    margin: 5px;
+    background-color: cyan;
+    color: black;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+.type1{
+    width: 125px;
+}
+
+.type2{
+    width: 150px;
+}
+
+.type3{
+    width: 198px;
+}
+
+h1{
+    font-size: 50px;
+    display: inline;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h4{
+    font-size: 40px;
+    display: inline;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
