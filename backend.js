@@ -12,8 +12,8 @@ document.addEventListener('keydown', playKey);
 function startGame(){
     isGameStarted = true;
     var key = Math.floor(Math.random()*36);
-    document.getElementById("Key"+keys[key]).style.borderColor = getColor();
-    document.getElementById("Key"+keys[key]).style.color = getColor();
+    document.getElementById("Key"+keys[key]).style.borderColor = color;
+    document.getElementById("Key"+keys[key]).style.color = color;
     document.getElementById("Key"+keys[key]).style.backgroundColor = 'black';
     isKeySelected[key] = true;
 }
@@ -44,17 +44,15 @@ function normal(){
     for(var i in keys){
         document.getElementById("Key"+keys[i]).style.borderColor = 'black';
         document.getElementById("Key"+keys[i]).style.color = 'black';
-        document.getElementById("Key"+keys[i]).style.backgroundColor = getColor();
+        document.getElementById("Key"+keys[i]).style.backgroundColor = color;
     }
 }
 
 function changeColor(){
     colorCounter++;
-    colorCounter = colorCounter%colors.length;
-    color = colors[colorCounter]
+    colorCounter = colorCounter%(colors.length);
+    color = colors[colorCounter];
     root.style.setProperty('--primary-color', color);
-}
-
-function getColor(){
-    return color;
+    normal();
+    startGame();
 }
