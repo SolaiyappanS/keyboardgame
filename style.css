@@ -1,12 +1,15 @@
+:root{
+    --primary-color: cyan;
+}
 body{
     background-color: black;
-    color: cyan;
+    color: var(--primary-color);
 }
 
 .table{
     display: block;
     padding: 10px;
-    font-family: Impact;
+    font-family: Segoe UI;
 }
 
 .row{
@@ -21,7 +24,7 @@ body{
     text-align: center;
     padding-top: 20px;
     margin: 5px;
-    background-color: cyan;
+    background-color: var(--primary-color);
     color: black;
     border-radius: 5px;
     border: 1px black solid;
@@ -41,6 +44,7 @@ body{
 
 h1{
     font-size: 50px;
+    font-family: Segoe UI;
     display: inline;
     font-weight: normal;
     text-transform: uppercase;
@@ -48,9 +52,14 @@ h1{
 }
 
 h4{
-    font-size: 40px;
+    font-size: 30px;
+    font-family: Segoe UI;
     display: inline;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 4px;
+    width: 500px;
+    padding: 10px;
+    border: 1px var(--primary-color) solid;
+    border-radius: 3px;
 }
