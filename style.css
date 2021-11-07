@@ -14,6 +14,7 @@ body{
 
 .row{
     display: block;
+    justify-content: center;
 }
 
 .column{
@@ -23,11 +24,14 @@ body{
     font-size: 30px;
     text-align: center;
     padding-top: 20px;
-    margin: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background-color: var(--primary-color);
     color: black;
     border-radius: 5px;
-    border: 1px black solid;
+    border: 3px var(--primary-color) solid;
 }
 
 .type1{
@@ -60,6 +64,6 @@ h4{
     letter-spacing: 4px;
     width: 500px;
     padding: 10px;
-    border: 1px var(--primary-color) solid;
-    border-radius: 3px;
+    border: 2px var(--primary-color) solid;
+    border-radius: 5px;
 }
