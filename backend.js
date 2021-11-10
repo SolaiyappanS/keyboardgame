@@ -2,7 +2,7 @@ var keys = ['1','2','3','4','5','6','7','8','9','0',
             'A','B','C','D','E','F','G','H','I','J',
             'K','L','M','N','O','P','Q','R','S','T',
             'U','V','W','X','Y','Z'];
-var colors = ['#5ff','#faf','#ff5','#dde'];
+var colors = ['#1ff','pink','#ff5','white'];
 var colorCounter = 0;
 var color = 'cyan';
 var root = document.querySelector(':root');
@@ -12,7 +12,6 @@ document.addEventListener('keydown', playKey);
 function startGame(){
     isGameStarted = true;
     var key = Math.floor(Math.random()*36);
-    document.getElementById("Key"+keys[key]).style.border = '3px solid';
     document.getElementById("Key"+keys[key]).style.borderColor = color;
     document.getElementById("Key"+keys[key]).style.color = color;
     document.getElementById("Key"+keys[key]).style.backgroundColor = 'black';
@@ -43,7 +42,7 @@ function playKey(e){
 
 function normal(){
     for(var i in keys){
-        document.getElementById("Key"+keys[i]).style.border = '3px solid var(--primary-color)';
+        document.getElementById("Key"+keys[i]).style.borderColor = color;
         document.getElementById("Key"+keys[i]).style.color = 'black';
         document.getElementById("Key"+keys[i]).style.backgroundColor = color;
     }
