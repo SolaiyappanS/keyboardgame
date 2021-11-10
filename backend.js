@@ -2,13 +2,14 @@ var keys = ['1','2','3','4','5','6','7','8','9','0',
             'A','B','C','D','E','F','G','H','I','J',
             'K','L','M','N','O','P','Q','R','S','T',
             'U','V','W','X','Y','Z'];
-var colors = ['#0ff','#f0f','#ff0','skyblue','wheat','lightgreen'];
+var colors = ['#0ff','#cd0','#f4b','#ade','#fc9','#8e9'];
 var colorCounter = 0;
-var color = 'cyan';
+var color = colors[0];
 var root = document.querySelector(':root');
 var isKeySelected = new Array(36);
 isKeySelected.fill(false);
 document.addEventListener('keydown', playKey);
+
 function startGame(){
     isGameStarted = true;
     var key = Math.floor(Math.random()*36);
@@ -17,6 +18,7 @@ function startGame(){
     document.getElementById("Key"+keys[key]).style.backgroundColor = 'black';
     isKeySelected[key] = true;
 }
+
 function playKey(e){
     if(keys.indexOf((e.key).toUpperCase()) != -1){
         var keyVal = keys.indexOf((e.key).toUpperCase());

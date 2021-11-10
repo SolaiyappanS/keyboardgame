@@ -8,13 +8,14 @@ body{
 
 .table{
     display: block;
+    width: 97vw;
     padding: 10px;
     font-family: Segoe UI;
 }
 
 .row{
     display: block;
-    justify-content: center;
+    max-height: 100px;
 }
 
 .column{
