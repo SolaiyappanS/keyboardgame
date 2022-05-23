@@ -1,76 +1,80 @@
-:root{
-    --primary-color: cyan;
+:root {
+  --primary-color: #ddd;
 }
-body{
-    background-color: black;
-    color: var(--primary-color);
-}
-
-.table{
-    display: block;
-    width: 97vw;
-    padding: 10px;
-    font-family: Segoe UI;
+body {
+  background-color: #212121;
+  color: var(--primary-color);
 }
 
-.row{
-    display: block;
-    max-height: 100px;
+.table {
+  display: block;
+  width: 97vw;
+  padding: 10px;
+  font-family: Segoe UI;
+  overflow: auto;
+  white-space: nowrap;
+  margin: 5px;
 }
 
-.column{
-    display: inline-block;
-    height: 60px;
-    width: 80px;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 20px;
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: var(--primary-color);
-    color: black;
-    border-radius: 5px;
-    border: 3px var(--primary-color) solid;
+.row {
+  display: block;
+  max-height: 100px;
 }
 
-.type1{
-    width: 125px;
+.column {
+  display: inline-block;
+  height: 60px;
+  width: 80px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: var(--primary-color);
+  color: #212121;
+  border-radius: 5px;
+  border: 3px var(--primary-color) solid;
 }
 
-.type2{
-    width: 150px;
+.type1 {
+  width: 125px;
 }
 
-.type3{
-    width: 198px;
+.type2 {
+  width: 150px;
 }
 
-h1{
-    color: white;
-    font-size: 50px;
-    font-family: Segoe UI;
-    display: inline;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+.type3 {
+  width: 198px;
 }
 
-h1 span, h4 i{
-    color: var(--primary-color);
+h1 {
+  color: #ddd;
+  font-size: 50px;
+  font-family: Segoe UI;
+  display: inline;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
-h4{
-    color: white;
-    font-size: 30px;
-    font-family: Segoe UI;
-    display: inline;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    width: 500px;
-    padding: 10px;
-    border: 2px var(--primary-color) solid;
-    border-radius: 5px;
+h1 span,
+h4 i {
+  color: var(--primary-color);
+}
+
+h4 {
+  color: #ddd;
+  font-size: 30px;
+  font-family: Segoe UI;
+  display: inline;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: 500px;
+  padding: 10px;
+  border: 2px var(--primary-color) solid;
+  border-radius: 5px;
 }

@@ -1,103 +1,116 @@
 <html>
-    <head>
-        <title>Keyboard Tiles</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://kit.fontawesome.com/be5b6c74f5.js" crossorigin="anonymous"></script>
-        <script src="backend.js"></script>
-    </head>
-    <body onload="startGame()">
-        <div class="wrapper">
-            <div class="container">
-                <center><br><br>
-                    <h1><span>"</span>Keyboard Tiles<span>"</span></h1><br><br>
-                    <h4>Eyes on the Screen
-                        <i class="fas fa-adjust" title="Change Theme" onclick="changeColor()"></i>
-                    </h4><br><br>
-                    <div class="table">
-                        <div class="row">
-                            <div class="column">ESC</div>
-                            <div class="column" id="Key1">1</div>
-                            <div class="column" id="Key2">2</div>
-                            <div class="column" id="Key3">3</div>
-                            <div class="column" id="Key4">4</div>
-                            <div class="column" id="Key5">5</div>
-                            <div class="column" id="Key6">6</div>
-                            <div class="column" id="Key7">7</div>
-                            <div class="column" id="Key8">8</div>
-                            <div class="column" id="Key9">9</div>
-                            <div class="column" id="Key0">0</div>
-                            <div class="column">-</div>
-                            <div class="column">+</div>
-                            <div class="column type1">BACK</div>
-                        </div>
-                        <div class="row">
-                            <div class="column type1">TAB</div>
-                            <div class="column" id="KeyQ">Q</div>
-                            <div class="column" id="KeyW">W</div>
-                            <div class="column" id="KeyE">E</div>
-                            <div class="column" id="KeyR">R</div>
-                            <div class="column" id="KeyT">T</div>
-                            <div class="column" id="KeyY">Y</div>
-                            <div class="column" id="KeyU">U</div>
-                            <div class="column" id="KeyI">I</div>
-                            <div class="column" id="KeyO">O</div>
-                            <div class="column" id="KeyP">P</div>
-                            <div class="column">[</div>
-                            <div class="column">]</div>
-                            <div class="column">\</div>
-                        </div>
-                        <div class="row">
-                            <div class="column type2">CAPS</div>
-                            <div class="column" id="KeyA">A</div>
-                            <div class="column" id="KeyS">S</div>
-                            <div class="column" id="KeyD">D</div>
-                            <div class="column" id="KeyF">F</div>
-                            <div class="column" id="KeyG">G</div>
-                            <div class="column" id="KeyH">H</div>
-                            <div class="column" id="KeyJ">J</div>
-                            <div class="column" id="KeyK">K</div>
-                            <div class="column" id="KeyL">L</div>
-                            <div class="column">;</div>
-                            <div class="column">'</div>
-                            <div class="column type2">ENTER</div>
-                        </div>
-                        <div class="row">
-                            <div class="column type3">SHIFT</div>
-                            <div class="column" id="KeyZ">Z</div>
-                            <div class="column" id="KeyX">X</div>
-                            <div class="column" id="KeyC">C</div>
-                            <div class="column" id="KeyV">V</div>
-                            <div class="column" id="KeyB">B</div>
-                            <div class="column" id="KeyN">N</div>
-                            <div class="column" id="KeyM">M</div>
-                            <div class="column">,</div>
-                            <div class="column">.</div>
-                            <div class="column">/</div>
-                            <div class="column type3">SHIFT</div>
-                        </div>
-                    </div><br><br>
-                    <h4>Hands on the Keyboard</h4><br>
-                </center>
+  <head>
+    <title>Keyboard Tiles</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/be5b6c74f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="backend.js"></script>
+  </head>
+  <body onload="startGame()">
+    <div class="wrapper">
+      <div class="container">
+        <center>
+          <br /><br />
+          <h1><span>"</span>Keyboard Tiles<span>"</span></h1>
+          <br /><br />
+          <h4>
+            Eyes on the Screen
+            <i
+              class="fas fa-adjust"
+              title="Change Theme"
+              onclick="changeColor()"
+            ></i>
+          </h4>
+          <br /><br />
+          <div class="table">
+            <div class="row">
+              <div class="column">ESC</div>
+              <div class="column" id="Key1">1</div>
+              <div class="column" id="Key2">2</div>
+              <div class="column" id="Key3">3</div>
+              <div class="column" id="Key4">4</div>
+              <div class="column" id="Key5">5</div>
+              <div class="column" id="Key6">6</div>
+              <div class="column" id="Key7">7</div>
+              <div class="column" id="Key8">8</div>
+              <div class="column" id="Key9">9</div>
+              <div class="column" id="Key0">0</div>
+              <div class="column">-</div>
+              <div class="column">+</div>
+              <div class="column type1">BACK</div>
             </div>
-        </div>
-        <audio id="buzzer" src="sounds/buzzer.mp3"></audio>
-        <audio id="coin0" src="sounds/c0.wav"></audio>
-        <audio id="coin1" src="sounds/c1.wav"></audio>
-        <audio id="coin2" src="sounds/c2.wav"></audio>
-        <audio id="coin3" src="sounds/c3.wav"></audio>
-        <audio id="coin4" src="sounds/c4.wav"></audio>
-        <audio id="coin5" src="sounds/c5.wav"></audio>
-        <audio id="coin6" src="sounds/c6.wav"></audio>
-        <audio id="coin7" src="sounds/c7.wav"></audio>
-        <audio id="coin8" src="sounds/c8.wav"></audio>
-        <audio id="coin9" src="sounds/c9.wav"></audio>
-        <audio id="coin10" src="sounds/c10.wav"></audio>
-        <audio id="coin11" src="sounds/c11.wav"></audio>
-        <audio id="coin12" src="sounds/c12.wav"></audio>
-        <audio id="coin13" src="sounds/c13.wav"></audio>
-        <audio id="coin14" src="sounds/c14.wav"></audio>
-        <audio id="coin15" src="sounds/c15.wav"></audio>
-        <audio id="coin16" src="sounds/c16.wav"></audio>
-    </body>
+            <div class="row">
+              <div class="column type1">TAB</div>
+              <div class="column" id="KeyQ">Q</div>
+              <div class="column" id="KeyW">W</div>
+              <div class="column" id="KeyE">E</div>
+              <div class="column" id="KeyR">R</div>
+              <div class="column" id="KeyT">T</div>
+              <div class="column" id="KeyY">Y</div>
+              <div class="column" id="KeyU">U</div>
+              <div class="column" id="KeyI">I</div>
+              <div class="column" id="KeyO">O</div>
+              <div class="column" id="KeyP">P</div>
+              <div class="column">[</div>
+              <div class="column">]</div>
+              <div class="column">\</div>
+            </div>
+            <div class="row">
+              <div class="column type2">CAPS</div>
+              <div class="column" id="KeyA">A</div>
+              <div class="column" id="KeyS">S</div>
+              <div class="column" id="KeyD">D</div>
+              <div class="column" id="KeyF">F</div>
+              <div class="column" id="KeyG">G</div>
+              <div class="column" id="KeyH">H</div>
+              <div class="column" id="KeyJ">J</div>
+              <div class="column" id="KeyK">K</div>
+              <div class="column" id="KeyL">L</div>
+              <div class="column">;</div>
+              <div class="column">'</div>
+              <div class="column type2">ENTER</div>
+            </div>
+            <div class="row">
+              <div class="column type3">SHIFT</div>
+              <div class="column" id="KeyZ">Z</div>
+              <div class="column" id="KeyX">X</div>
+              <div class="column" id="KeyC">C</div>
+              <div class="column" id="KeyV">V</div>
+              <div class="column" id="KeyB">B</div>
+              <div class="column" id="KeyN">N</div>
+              <div class="column" id="KeyM">M</div>
+              <div class="column">,</div>
+              <div class="column">.</div>
+              <div class="column">/</div>
+              <div class="column type3">SHIFT</div>
+            </div>
+          </div>
+          <br /><br />
+          <h4>Hands on the Keyboard</h4>
+          <br />
+        </center>
+      </div>
+    </div>
+    <audio id="buzzer" src="sounds/buzzer.mp3"></audio>
+    <audio id="coin0" src="sounds/c0.wav"></audio>
+    <audio id="coin1" src="sounds/c1.wav"></audio>
+    <audio id="coin2" src="sounds/c2.wav"></audio>
+    <audio id="coin3" src="sounds/c3.wav"></audio>
+    <audio id="coin4" src="sounds/c4.wav"></audio>
+    <audio id="coin5" src="sounds/c5.wav"></audio>
+    <audio id="coin6" src="sounds/c6.wav"></audio>
+    <audio id="coin7" src="sounds/c7.wav"></audio>
+    <audio id="coin8" src="sounds/c8.wav"></audio>
+    <audio id="coin9" src="sounds/c9.wav"></audio>
+    <audio id="coin10" src="sounds/c10.wav"></audio>
+    <audio id="coin11" src="sounds/c11.wav"></audio>
+    <audio id="coin12" src="sounds/c12.wav"></audio>
+    <audio id="coin13" src="sounds/c13.wav"></audio>
+    <audio id="coin14" src="sounds/c14.wav"></audio>
+    <audio id="coin15" src="sounds/c15.wav"></audio>
+    <audio id="coin16" src="sounds/c16.wav"></audio>
+  </body>
 </html>
 <!-- Created by Solaiyappan Shanmuganathan -->
