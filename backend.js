@@ -2,7 +2,7 @@ var keys = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 keys.push("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M");
 keys.push("N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
 
-var colors = ["#FFE98A", "#94F3E4", "#F582A7"];
+var colors = ["#FAF3F0", "#E6FFFD", "#FDF4F5", "#E3F4F4"];
 var colorCounter = 0;
 var color = colors[colorCounter];
 

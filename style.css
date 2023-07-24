@@ -36,6 +36,7 @@ body {
   color: #212121;
   border-radius: 5px;
   border: 3px var(--primary-color) solid;
+  transition: 500ms;
 }
 
 .type1 {
